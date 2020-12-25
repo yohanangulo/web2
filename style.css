@@ -1,0 +1,322 @@
+:root {
+    --dark: #1a1a1a;
+    --white: #ffffff;
+    --light-grey: #efefef;
+    --gold: #ecd5a7;
+    --grren: #edff00;
+}
+
+@font-face{
+    font-family: "Adlinnaka";
+    src: url("/Fonts/Adlinnaka-BoldDemo.ttf");
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .05rem;
+    background-color: var(--dark);
+
+}
+
+.brief{
+    font-weight: 400;
+    text-align: justify;
+}
+
+html.sr .container-transition{
+    visibility: hidden;
+}
+
+.navbar-brand {
+    font-family: 'Adlinnaka', sans-serif;
+    font-weight: 600 !important;
+    line-height: 1.5 !important;
+    margin-right: 0;
+    font-size: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500 !important;
+    line-height: 1.5 !important;
+}
+
+.text-light{
+    color: var(--white) !important;
+}
+
+.white-text{
+    color: var(--white) !important;
+}
+
+.bg-light{
+    background-color: var(--white) !important;
+}
+
+.bg-light-grey{
+    background-color: var(--light-grey);
+
+}
+
+a{
+    color: var(--light);
+}
+
+a:hover{
+    color: var(--light);
+    text-decoration: none;
+}
+
+.bg-dark {
+    background-color: var(--dark) !important;
+}
+
+.text-gold {
+    color: var(--gold) !important;
+}
+
+.text-green{
+    color: var(--grren) !important;
+}
+
+.text-dark {
+    color: var(--dark) !important;
+}
+
+.navbar{
+    min-height: 5rem;
+
+}
+
+.navbar-nav{
+    text-align: center;
+}
+
+.navbar-toggler{
+    color: var(--light-grey);
+}
+
+button:focus{
+    outline: none;
+}
+
+.align{
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+.align:focus{
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: .8rem;
+
+}
+
+section{
+    padding: 6rem 0;
+}
+
+
+#slider{
+    padding: 5rem 0 0 0;
+}
+
+.p-top-9{
+    padding: 9rem 0 0 0;
+}
+
+.mb-9{
+    margin-bottom: 9rem !important;
+}
+
+.mt-6 {
+    margin-top: 4rem;
+}
+
+.mt-12 {
+    margin-top: 8rem;
+
+}
+.o-hidden {
+    overflow: hidden;
+}
+
+.container-transition img {
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.container-transition:hover img{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.container-portfolio{
+    
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+
+}
+
+.container-grid{
+    grid-template-columns: repeat(4,1fr);
+    display: inline-grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.border-style{
+    border-radius: 4px;
+    
+}
+
+.max-width-100 {
+    max-width: 100%;
+    
+}
+
+.badge {
+    font-weight: 500;
+    padding: 0.4rem 1.4rem;
+    line-height: 1.5;
+}
+
+.vertical {
+    margin: -3px;
+}
+
+.btn {
+    padding: .4rem 1rem;
+    border-radius: .2rem;
+}
+
+
+.btn-primary{
+    background-color: var(--dark);
+    border-color: var(--dark) !important;
+}
+
+.btn-primary:hover{
+    background-color: var(--grren) !important;
+    color: var(--dark) !important;
+    border-color: var(--dark);
+}
+
+.btn-green {
+    color: var(--dark);
+}
+
+.btn-green:hover{
+    color: var(--dark) !important;
+    background-color: var(--light-grey) !important;
+}
+
+
+.bg-green{
+    background-color: var(--grren) !important;
+}
+
+.blog-info {
+    bottom: 1rem;
+    left: 1.5rem;
+}
+
+.lead {
+    font-weight: 500;
+}
+
+.form-control {
+    padding: 1.5rem 1rem;
+    font-weight: 500;
+    border: 0;
+}
+
+.form-control:focus{
+    outline: none;
+    box-shadow: none;
+    outline: 2px solid var(--grren);
+}
+
+.rrss{
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+#pricing .card{
+    max-width: 500px;
+    margin: auto;
+}
+
+.testimonials .col-md-4{
+    margin-top: 9rem;
+
+}
+
+.profile img{
+    top: -60px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--dark);
+    padding: 10px;
+
+}
+
+.user{
+    width: 120px;
+    border-radius: 50%;
+}
+
+.profile {
+    padding: 70px 10px 10px;
+    background-color: var(--light-grey);
+    
+}
+
+@media (max-width: 575.98px) {
+    #slider h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .container-grid{
+
+    grid-template-columns: repeat(3, 1fr);
+   
+    }
+}
+
+@media (max-width: 1040px) {
+
+    .container-grid{
+
+    grid-template-columns: repeat(2, 1fr);
+   
+    }
+}
+
+@media (max-width: 604px) {
+
+    .container-grid{
+
+    grid-template-columns: repeat(1, 1fr);
+   
+    }
+}
